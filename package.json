@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/0hodo1/CleanBlogStarterFile#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   },
   "devDependencies": {
