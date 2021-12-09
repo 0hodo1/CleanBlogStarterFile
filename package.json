@@ -1,0 +1,24 @@
+{
+  "name": "cleanblogstarterfile",
+  "version": "1.0.0",
+  "description": "nodejs blog project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0hodo1/CleanBlogStarterFile.git"
+  },
+  "keywords": [
+    "nodejs",
+    "0hodo1",
+    "blog"
+  ],
+  "author": "0hodo1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0hodo1/CleanBlogStarterFile/issues"
+  },
+  "homepage": "https://github.com/0hodo1/CleanBlogStarterFile#readme"
+}
