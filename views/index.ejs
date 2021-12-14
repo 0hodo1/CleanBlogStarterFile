@@ -25,19 +25,19 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-        <% for(let i = 0 ; i < post.length ; i++){ %>
+        <% for(let i = 0 ; i < posts.length ; i++){ %>
 
         <div class="post-preview">
-          <a href="post.html">
+          <a href="/posts/<%= posts[i]._id %>">
             <h2 class="post-title">
-              <%= post[i].title %>
+              <%= posts[i].title %>
             </h2>
             <h3 class="post-subtitle">
-              <%= post[i].detail %>
+              <%= posts[i].detail %>
             </h3>
           </a>
           <p class="post-meta">
-            <%= post[i].dateCreated %>
+            <%= posts[i].dateCreated %>
           </p>
         </div>
         <hr>

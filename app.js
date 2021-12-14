@@ -22,9 +22,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', async (req, res) => {
-  const post = await Post.find({});
+  const posts = await Post.find({});
   res.render('index', {
-    post: post,
+    posts: posts,
+  });
+});
+app.get('/posts/:id', async (req, res) => {
+  const post = await Post.findById(req.params.id);
+  res.render('post', {
+    post,
   });
 });
 app.get('/about', (req, res) => {
