@@ -49,7 +49,7 @@ app.get('/add_post', pageController.getPostPage);
 app.get('/about', pageController.getAboutPage);
 app.get('/posts/edit_post/:id', pageController.getEditPage);
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Sunucu ${port} nolu portta çalışıyor...`);
 });
