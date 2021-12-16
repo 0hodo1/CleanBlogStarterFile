@@ -11,10 +11,20 @@ const pageController = require('./controllers/pageController');
 const app = express();
 
 // connect db
-mongoose.connect('mongodb://127.0.0.1:27017/cleanblog-test-db', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose
+  .connect(
+    'mongodb+srv://hodo:F8FCdWu84Lam_ve@cluster0.20khx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => {
+    console.log('Database connected!');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // template engine
 app.set('view engine', 'ejs');
